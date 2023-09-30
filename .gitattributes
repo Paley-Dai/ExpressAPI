@@ -1,0 +1,7 @@
+# Set the default behavior for all text files to LF (Unix style)
+* text=auto
+
+# Explicitly specify files that should always have LF endings
+*.md text
+*.js text
+*.json text
