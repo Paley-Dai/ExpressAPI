@@ -5,7 +5,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect('mongodb+srv://siddharthaghimire:J72Sxdu58NHKVMcX@cluster0.vij5fs8.mongodb.net/?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://siddharthaghimire:I1Qc3uueefutQfUD@ac-9pvrbjr-shard-00-00.f3ey1v6.mongodb.net:27017,ac-9pvrbjr-shard-00-01.f3ey1v6.mongodb.net:27017,ac-9pvrbjr-shard-00-02.f3ey1v6.mongodb.net:27017/?ssl=true&replicaSet=atlas-xxleoa-shard-0&authSource=admin&retryWrites=true&w=majority',
     {
         useNewUrlParser: true,
         useUnifiedTopology: true
