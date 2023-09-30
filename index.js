@@ -3,8 +3,9 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 app.use(express.json())
+app.use(cors())
 
-mongoose.connect('mongodb+srv://siddharthaghimire:cngMbMfeIvm2avR6@cluster0.vij5fs8.mongodb.net/?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://siddharthaghimire:J72Sxdu58NHKVMcX@cluster0.vij5fs8.mongodb.net/?retryWrites=true&w=majority',
     {
         useNewUrlParser: true,
         useUnifiedTopology: true
