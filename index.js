@@ -11,7 +11,11 @@ mongoose.connect(URI, mongoose.connect(dbURI, { useNewUrlParser: true, useUnifie
 .catch(err => console.log(err))
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.urlencoded({extended: true}));
+
+app.get("/", (_req, res) => {
+    res.send("Async Bananas");
+})
 
 app.post("/data", (req, res) => {
     try {
