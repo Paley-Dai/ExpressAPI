@@ -1,0 +1,5 @@
+# Specify that files in the "node_modules" directory should have line endings preserved
+node_modules/**/* -text
+
+# Specify that Markdown files should have LF line endings
+*.md text eol=lf
